@@ -20,18 +20,18 @@
   "homepage": "https://gitlab.com/mclexis18/proyecto_grupal_web_ii#readme",
   "dependencies": {
     "awilix": "^4.3.4",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.12.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
     "install": "^0.13.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.14",
+    "mongoose": "^5.13.14",
     "mongoose-autopopulate": "^0.14.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.15"
   }
 }
