@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    #ContenidoPromociones
+        p Bienvenido a Cursos locos
+        p Actualmente contamoscon las siguientes promociones
+        each PromocionesDt in Promociones 
+            ul 
+                p Nuestra promocion de lujo es
+                li= PromocionesDt.descripcion 
+                p con Fecha inicio de
+                li= PromocionesDt.fecha_inicio 
+                p con fecha fin de
+                li= PromocionesDt.fecha_fin

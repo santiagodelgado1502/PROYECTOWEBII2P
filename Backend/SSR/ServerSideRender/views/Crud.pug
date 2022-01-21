@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    form(action="/MetodosEnvio/EnviandoDatos/Cursos", method="post").Formulario
+        div#Contenido-Formulario0
+            h1 Agregar Cursos 
+            div#Contenido-Formulario 
+                div#Contenido-Izquierdo 
+                    label(for="name_materia").Lbl-Formulario Nombre Materia
+                        input(type="text", name="name_materia", value= Cursos.name_materia)#name_materia.Btn-Formulario
+                    label(for="duracion").Lbl-Formulario Duración
+                        input(type="text", name="duracion", value= Cursos.duracion)#duracion.Btn-Formulario
+                div#Contenido-Derecho
+                    label(for="costo").Lbl-Formulario Costo
+                        input(type="text", name="costo", value= Cursos.costo)#costo.Btn-Formulario
+                    label(for="temas").Lbl-Formulario Temas
+                        input(type="text", name="temas", value= Cursos.temas)#temas.Btn-Formulario
+            #Conten-Boton 
+                button(type="submit").Boton-Formulario#Enviar Enviar
+                button.Boton-Formulario.Boton-Formulario2
+                    a(href="/Admin") Regresar   

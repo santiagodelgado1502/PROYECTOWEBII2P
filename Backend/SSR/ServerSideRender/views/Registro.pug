@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    form(action="/MetodosEnvio/EnviandoDatos/Inscripciones", method="post").Formulario
+        div#Contenido-Formulario0
+            h1 Registro de Inscripción 
+            div#Contenido-Formulario 
+                div#Contenido-Izquierdo 
+                    label(for="NumeroCuenta").Lbl-Formulario Numero de Cuenta
+                        input(type="text", name="NumeroCuenta", value= Inscripciones.NumeroCuenta)#NumeroCuenta.Btn-Formulario
+                    label(for="Cedula").Lbl-Formulario Cedula
+                        input(type="text", name="Cedula", value= Inscripciones.Cedula)#Cedula.Btn-Formulario
+                div#Contenido-Derecho
+                    label(for="Telefono").Lbl-Formulario Telefono
+                        input(type="text", name="Telefono", value= Inscripciones.Telefono)#Telefono.Btn-Formulario
+                    label(for="Curso").Lbl-Formulario Curso 
+                        select(name="Curso").Btn-Formulario#Curso
+                            option(selected disabled hidden style='display:none')
+                            each Cursos1 in CursosDB
+                                option(value= Inscripciones.Curso)= Cursos1.name_materia
+            #Conten-Boton 
+                button(type="submit", onclick='alert(Registro agregado)').Boton-Formulario#Enviar Enviar
+                button.Boton-Formulario.Boton-Formulario2
+                    a(href="Cursos") Regresar   

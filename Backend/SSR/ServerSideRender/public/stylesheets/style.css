@@ -1,0 +1,260 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(230, 230, 230, 0.671), rgb(238, 241, 245));
+}
+.FondoImagen{
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+#FondoPrincipal{
+  width: 100%;
+  height: 300px;
+}
+.Titulos{
+  text-align: center;
+  font-size: 24px;
+  color: rgb(2, 29, 29);
+  padding: 40px;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+p{
+  color:blue;
+}
+
+#Menu{
+  background-color:#3773ac;
+  width: 100%;
+} 
+#Cursos-Padre {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+}
+.Cursos {
+  background-color: rgb(247, 231, 231);
+  padding: 8px;
+  margin: 10px;
+  box-shadow: 20px 20px 100px rgb(151, 145, 145);
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+}
+.Imagen{
+
+  width: 250px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+
+}
+#ContenImagen{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 8px;
+}
+#ContenBotones{
+
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+
+}
+#Contendatos{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+
+}
+.Botones{
+  border-radius: 6%;
+  width:135px;
+  height: 40px;
+  margin: 2px;
+}
+.Botones1{
+
+  background-color: #56baed;
+  color: whitesmoke;
+}
+.Botones2{
+  background-color: red;
+  color: black;
+}
+#PieDePagina{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+  height: 300px;
+}
+#ContenidoMenu{
+  margin: 6px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+#Botones-Layout {
+
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  padding: 20px;
+
+}
+#Botones-Layout a{
+
+  display: flex;
+  justify-content: space-around;
+  background-color:blue;
+  width: 25%;
+  padding: 20px;
+  color: bisque;
+  font-size: 15px;
+
+}
+#Botones-Layout a:hover{
+
+  background-color: black;
+  color: beige;
+ 
+}
+
+
+.Busqueda{
+  width: 300px;
+  height: 40px;
+  margin-top: 3%;
+  border-radius: 20px;
+  border: none;
+  
+}
+.Logo{
+  border-radius: 50%;
+  width: 120px;
+  height: 100px;
+}
+#Datos-Layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Botones-Layout{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.Botones1-Layout{
+
+  width: 150px;
+  height: 32px;
+  background-color:red;
+  color: antiquewhite;
+  border: none;
+  margin: 10px;
+
+}
+
+.Formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#Contenido-Formulario0{
+  margin: 30px;
+  padding: 25px;
+  box-shadow: 20px 20px 80px black;
+}
+.Formulario h1 {
+  color: blue;
+  text-align: center;
+}
+.Lbl-Formulario{
+
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  padding: 10px;
+  font-size: 20px;
+  color: blue;
+
+}
+.Btn-Formulario{
+  width: 300px;
+  height: 38px;
+  font-size: 16px;
+  border: none;
+  background-color: #f6f6f6b6;
+  color: rgba(0, 0, 0, 0.397);
+  box-shadow: 20px 20px 200px rgba(0, 0, 0, 0.329);
+}
+.Slc-Formulario{
+  background-color: yellow;
+}
+#Contenido-Formulario{
+
+  display: flex;
+  justify-content: space-between;
+  border: none;
+
+}
+
+.Boton-Formulario{
+
+  width: 150px;
+  height: 32px;
+  background-color: #56baed;
+  color: antiquewhite;
+  border: none;
+  margin: 10px;
+}
+
+#Conten-Boton{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 2px;
+}
+.Boton-Formulario2{
+  background-color: red;
+}
+#ContenidoAdmin{
+
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+
+}
+.Btn-Cursos{
+  margin: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(137, 137, 235);
+  color: azure;
+}

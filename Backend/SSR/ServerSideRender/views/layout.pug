@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/Main.js") 
+  body
+    #Contenido  
+      #Menu
+        #ContenidoMenu
+          img(src="/images/logoP.jpg", alt="", srcset="").Logo 
+          #Datos-Layout   
+              h3 Bienvenid@ a Cursos locos
+          input(type="search", name="Busque sus datos aquí", placeholder="Busque Aqui su Curso").Busqueda 
+          div#Botones-Layout
+              a(href="Cursos") Cursos
+              a(href="Admin") Administrador
+              a(href="Registro") Inscripción
+              a(href="Promociones") Promociones 
+              a(href="http://localhost:4200/cursos") Salir
+            
+    block content
+      
+      

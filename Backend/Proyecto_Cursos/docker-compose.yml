@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  api:
+    build: ./api
+    depends_on: 
+      - mongo
+    environment: 
+      - PORT=8080
+      - CADENA_CONEXION=mongodb://mongo:27017/api
+      - APPLICATION_NAME=Cursos de diseño
+    ports: 
+      - "8080:8080"
+  
+  microservice:
+    build: ./microservice/curso-service1
+    depends_on: 
+      - mongo
+    environment: 
+      - PORT=5000
+      - CADENA_CONEXION=mongodb://mongo:27017/microservice
+      - APPLICATION_NAME=Cursos de diseño
+    ports: 
+      - "5000:5000"
+  mongo:
+    image: mongo  
+    

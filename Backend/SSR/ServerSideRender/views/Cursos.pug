@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    div#FondoPricipal
+        img(src="/images/FondoCurso.jpg", alt="").FondoImagen
+        div.Titulos 
+            h3= TituloPrincipal 
+    div#Cursos-Padre  
+        each Data, Index in Cursos
+            div.Cursos
+                div#ContenImagen
+                    img(src=`/images/Curso${Index+1}.jpg`, alt="", srcset="").Imagen
+                div#Contendatos
+                    div.Valores= Data.name_materia         
+                    div.Valores= Data.duracion
+                    div.Valores= Data.costo
+                    div.Valores= Data.temas
+                div.ContenBotones
+                    button.Botones.Botones1#Inscripcion
+                        a(href="Registro") Inscribirse 
+                    button(onclick=`alert(${Data.id_curso})`).Botones.Botones2#Detalles Ver Detalles
+    div.Titulos 
+            h3= TituloSecundario 
+    footer#PieDePagina 
+        #Informacion
+            p La informacion sobre el curso es acerca de cursos sobre diseño grafico y mas 
+        #Contactos
+            p Contactenos a los numeros 
+            ul 
+                li 0997253637333
+                li 0993637339303
+                li 0973647383847 
+        #Direccion 
+            p Nuestra dirección se encuentra en la avenida siempre viva 440
+                ul 
+                    li Calle aldon Calderon 
+                    li Cerca de la escuela 
